@@ -7,7 +7,7 @@
   ## Assumes household_power_consumption.txt file located in working dir
   
   ## read data
-power_consumption_data <- read.table("C:/Users/mahim/ExData_Plotting1/household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
+power_consumption_data <- read.table("./household_power_consumption.txt", stringsAsFactors = FALSE, header = TRUE, sep =";"  )
 power_consumption_data
   ## change class of all columns to correct class
 power_consumption_data$Date <- as.Date(power_consumption_data$Date, format="%d/%m/%Y")
